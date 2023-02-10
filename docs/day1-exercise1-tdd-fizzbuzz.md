@@ -19,5 +19,5 @@ You need to build a fizzbuzz function meeting the follwing requirements:
 
 ## How to Work
 
-1. Create separate files for your game code and test code (e.g. `src/fizzbuzz.ts` and `src/fizzbuzz.test.ts`.)
+1. Create separate files for your game code and test code (e.g. `src/main/FizzBuzz.java` and `src/test/FizzBuzzTest.java`.)
 2. Follow the red-green-refactor cycle when developing your code.

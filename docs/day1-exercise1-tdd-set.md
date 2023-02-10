@@ -20,5 +20,5 @@ You need to build Set functionality which meets the follwing requirements:
 
 ## How to Work
 
-1. Create separate files for your game code and test code (e.g. `src/set.ts` and `src/set.test.ts`.)
+1. Create separate files for your game code and test code (e.g. `src/main/Set.java` and `src/test/SetTest.java`.)
 2. Follow the red-green-refactor cycle when developing your code.

@@ -18,5 +18,5 @@ Implement 1 test at a time, and then write the code needed to pass the test, as 
 
 ## How to Work
 
-1. Create separate files for your game code and test code (e.g. `src/liftbutton.ts` and `src/liftbutton.test.ts`.)
+1. Create separate files for your game code and test code (e.g. `src/main/LiftButton.java` and `src/test/LiftButtonTest.java`.)
 2. Follow the red-green-refactor cycle when developing your code.
