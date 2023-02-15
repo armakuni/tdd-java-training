@@ -1,4 +1,4 @@
-# Day 1 Exercise 1: TDD Fizzbuzz
+# Day 1 Exercise 1: TDD LeapYear
 
 This exercise involves building a [Leap Year](https://en.wikipedia.org/wiki/Leap_year) method using Test-Driven Development to evolve your design iteratively. TDD gives you continuous feedback on the quality of your design whilst building confidence in your code.
 
