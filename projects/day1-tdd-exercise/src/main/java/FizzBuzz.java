@@ -1,8 +1,16 @@
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import static java.lang.String.valueOf;
 
 public class FizzBuzz {
 
-    public void evaluate(int number) {
-        throw new NotImplementedException();
+    public String evaluateFizzBuzz(int number) {
+        if (number % 3 == 0 && number % 5 == 0) {
+            return "fizzbuzz";
+        } else if (number % 3 == 0) {
+            return "fizz";
+        } else if (number % 5 == 0) {
+            return "buzz";
+        } else {
+            return valueOf(number);
+        }
     }
 }
