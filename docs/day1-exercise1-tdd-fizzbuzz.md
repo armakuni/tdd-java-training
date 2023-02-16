@@ -19,5 +19,10 @@ You need to build a fizzbuzz method meeting the following requirements:
 
 ## How to Work
 
-1. Create separate files for your game code and test code (e.g. `src/main/java/FizzBuzz.java` and `src/test/java/FizzBuzzTest.java`.)
-2. Follow the red-green-refactor cycle when developing your code.
+1. From CLI terminal Change the dir to `/tdd-java-training/projects/day1-tdd-exercise` and execute below command to run tests for `FizzBuzzTest.java`
+    ```
+    ./gradlew test --tests="FizzBuzzTest"
+    ```
+   Alternatively you can open the [FizzBuzzTest.java](../projects/day1-tdd-exercise/src/test/java/FizzBuzzTest.java) file and execute test from IDE.
+3. Create separate files for your main code and test code (e.g. `src/main/java/FizzBuzz.java` and `src/test/java/FizzBuzzTest.java`.)
+4. Follow the red-green-refactor cycle when developing your code.

@@ -19,5 +19,10 @@ You need to build a LeapYear method meeting the following requirements:
 
 ## How to Work
 
-1. Create separate files for your game code and test code (e.g. `src/main/java/LeapYear.java` and `src/test/java/LeapYearTest.java`.)
-2. Follow the red-green-refactor cycle when developing your code.
+1. From CLI terminal Change the dir to `/tdd-java-training/projects/day1-tdd-exercise` and execute below command to run tests for `LeapYearTest.java`
+    ```
+    ./gradlew test --tests="LeapYearTest"
+    ```
+   Alternatively you can open the [LeapYearTest.java](../projects/day1-tdd-exercise/src/test/java/LeapYearTest.java) file and execute test from IDE.
+3. Create separate files for your main code and test code (e.g. `src/main/java/LeapYear.java` and `src/test/java/LeapYearTest.java`.)
+4. Follow the red-green-refactor cycle when developing your code.
