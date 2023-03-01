@@ -1,6 +1,8 @@
 # Day 1 Exercise 1: TDD Fizzbuzz
 
-This exercise involves building a [Fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) method using Test-Driven Development to evolve your design iteratively. TDD gives you continuous feedback on the quality of your design whilst building confidence in your code.
+This exercise involves building a [Fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) method using Test-Driven Development to evolve your design iteratively.
+
+TDD gives you continuous feedback on the quality of your design whilst building confidence in your code.
 
 ## Approach
 
@@ -24,5 +26,5 @@ You need to build a fizzbuzz method meeting the following requirements:
     ./gradlew test --tests="FizzBuzzTest"
     ```
    Alternatively you can open the [FizzBuzzTest.java](../projects/day1-tdd-exercise/src/test/java/FizzBuzzTest.java) file and execute test from IDE.
-3. Create separate files for your main code and test code (e.g. `src/main/java/FizzBuzz.java` and `src/test/java/FizzBuzzTest.java`.)
-4. Follow the red-green-refactor cycle when developing your code.
+2. Create separate files for your main code and test code (e.g. `src/main/java/FizzBuzz.java` and `src/test/java/FizzBuzzTest.java`.)
+3. Follow the red-green-refactor cycle when developing your code.
