@@ -1,4 +1,4 @@
-# Day 1 Exercise 2: TDD SpringBoot Component
+# Day 1 Exercise 3: TDD HelloWorld SpringBoot
 
 WIP: For relevant replacement of the React exercise.
 

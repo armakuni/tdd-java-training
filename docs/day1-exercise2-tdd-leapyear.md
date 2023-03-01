@@ -1,4 +1,4 @@
-# Day 1 Exercise 1: TDD LeapYear
+# Day 1 Exercise 2: TDD LeapYear
 
 This exercise involves building a [Leap Year](https://en.wikipedia.org/wiki/Leap_year) method using Test-Driven Development to evolve your design iteratively. 
 

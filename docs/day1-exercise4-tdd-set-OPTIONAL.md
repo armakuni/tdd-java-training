@@ -1,6 +1,8 @@
-# Day 1 Exercise 2: TDD Set
+# Day 1 Exercise 4: TDD Set (OPTIONAL)
 
-This exercise involves building a Set class using Test-Driven Development to evolve your design iteratively. TDD gives you continuous feedback on the quality of your design whilst building confidence in your code.
+This exercise involves building a Set class using Test-Driven Development to evolve your design iteratively.
+
+TDD gives you continuous feedback on the quality of your design whilst building confidence in your code.
 
 ## Approach
 

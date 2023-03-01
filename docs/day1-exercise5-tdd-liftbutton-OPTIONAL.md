@@ -1,4 +1,4 @@
-# Day 1 Exercise 2: TDD - Lift Button
+# Day 1 Exercise 5: TDD - Lift Button (OPTIONAL)
 
 This exercise allows you to practice Test-Driven Development tests that involve `state` e.g. building a state machine;
 It involves building the "brains" of a lift button using Test-Driven Development to evolve your design iteratively. 
