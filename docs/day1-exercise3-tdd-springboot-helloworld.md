@@ -1,4 +1,4 @@
-# Day 1 Exercise 3: TDD HelloWorld Spring Boot
+# Day 1 Exercise 3: TDD HelloWorld Spring Boot Application
 
 This exercise involves building a Hello World Application using Spring Boot practising Test-Driven
 Development to evolve your design iteratively.
@@ -24,7 +24,7 @@ You need to build a `GET` API meeting the following requirements:
 ### Second requirement
 
 - Given a non-alphabetic username is passed `111@aslf`
-- When makes a call to a `GET` API at `http://localhost:8080/111@aslf`
+- When User makes a call to a `GET` API at `http://localhost:8080/111@aslf`
 - Then the API should return a error `400 BAD REQUEST` 
 
 ## How to Work
@@ -38,7 +38,16 @@ You need to build a `GET` API meeting the following requirements:
    the [HelloWorldTestE2E.java](../projects/day1/springboot-tdd-exercise/src/test/java/com/example/springboottddexercise/HelloWorldTestE2E.java) file and execute test
    from IDE.
 2. Create separate files for your main code and test code 
- - Main Code - `projects/day1/springboot-tdd-exercise/src/main/java/com/example/springboottddexercise/HelloWorld.java`
- - E2E Test  - `projects/day1/springboot-tdd-exercise/test/main/java/com/example/springboottddexercise/HelloWorldTestE2E.java`
- - Unit Test - `projects/day1/springboot-tdd-exercise/test/main/java/com/example/springboottddexercise/HelloWorldTest.java`
+   - Main Code - `projects/day1/springboot-tdd-exercise/src/main/java/com/example/springboottddexercise/HelloWorld.java`
+   - E2E Test  - `projects/day1/springboot-tdd-exercise/test/main/java/com/example/springboottddexercise/HelloWorldTestE2E.java`
+   - Unit Test - `projects/day1/springboot-tdd-exercise/test/main/java/com/example/springboottddexercise/HelloWorldTest.java`
 3. Follow the red-green-refactor cycle when developing your code.
+4. Write your first test in `HelloWorldTest.java`.
+5. Execute test from CLI terminal by changing the dir to `/tdd-java-training/projects/day1/springboot-tdd-exercise` and execute below command to
+      run tests for `HelloWorldTest.java`
+   ```
+   ./gradlew test --tests="HelloWorldTest"
+   ```
+   Alternatively you can open
+the [HelloWorldTest.java](../projects/day1/springboot-tdd-exercise/src/test/java/com/example/springboottddexercise/HelloWorldTest.java) file and execute test
+from IDE.
