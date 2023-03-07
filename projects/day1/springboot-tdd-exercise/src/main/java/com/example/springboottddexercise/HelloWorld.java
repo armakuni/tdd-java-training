@@ -11,9 +11,9 @@ public class HelloWorld {
 
     @RequestMapping(value = "/{name}")
     public String getMessage(@PathVariable String name) {
-        if (!name.matches("^x[a-z\\d\\s]+$")) {
+        if (!name.matches("^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$")) {
             throw new HttpClientErrorException(HttpStatus.BAD_REQUEST,
-                    "Name should only be alphabetic");
+                    "400 Name should only be alphabetic");
         }
         return "Hello World " + name;
     }
