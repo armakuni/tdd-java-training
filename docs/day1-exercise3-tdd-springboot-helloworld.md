@@ -1,185 +1,44 @@
-# Day 1 Exercise 3: TDD HelloWorld SpringBoot
+# Day 1 Exercise 3: TDD HelloWorld Spring Boot
 
-WIP: For relevant replacement of the React exercise.
+This exercise involves building a Hello World Application using Spring Boot practising Test-Driven
+Development to evolve your design iteratively.
 
-[//]: # (This exercise involves building a React component using tests to drive the development.)
+TDD gives you continuous feedback on the quality of your design whilst building confidence in your code.
 
-[//]: # ()
+## Approach
 
-[//]: # (## Approach)
+When doing this exercise, try to implement the method using tests to convince yourself that the code you have written is
+correct.
 
-[//]: # ()
+Implement 1 test at a time, and then write the code needed to pass the test, as per the red-green-refactor cycle.
 
-[//]: # (When doing this exercise, try to implement the component using tests to convince)
+## Functional requirements
 
-[//]: # (yourself that the code you have written is correct.)
+You need to build a `GET` API meeting the following requirements:
 
-[//]: # ()
+### First requirement
+- Given a Username is passed `Abhishek`
+- When makes a call to a `GET` API at `http://localhost:8080/Abhishek`
+- Then the API should return a response `Hello World Abhishek`
 
-[//]: # (**BONUS POINTS TO ANYONE WHO MANAGES TO WRITE THE WHOLE COMPONENT USING ONLY)
+### Second requirement
 
-[//]: # (TESTS AND HAS IT WORKING THE FIRST TIME IT IS OPENED IN THE BROWSER!**)
+- Given a non-alphabetic username is passed `111@aslf`
+- When makes a call to a `GET` API at `http://localhost:8080/111@aslf`
+- Then the API should return a error `400 BAD REQUEST` 
 
-[//]: # ()
+## How to Work
 
-[//]: # (## Component Requirements)
-
-[//]: # ()
-
-[//]: # (The component you have to develop is an Accordion menu. An accordion is a)
-
-[//]: # (vertically stacked, sectioned list &#40;[see example]&#40;https://react-accordion-demo.netlify.app/&#41;&#41;. Each section can be expanded by clicking the heading. The component must be developed **from scratch**. )
-
-[//]: # ()
-
-[//]: # (### Functional requirements)
-
-[//]: # ()
-
-[//]: # (1. On initialization, no sections are expanded)
-
-[//]: # (2. A section expands when you click the title)
-
-[//]: # (3. When a section expands, all other sections close)
-
-[//]: # (4. You can close all sections by clicking the currently expanded title)
-
-[//]: # ()
-
-[//]: # (### HTML)
-
-[//]: # ()
-
-[//]: # (The generated HTML should look something like this:)
-
-[//]: # ()
-
-[//]: # (```html)
-
-[//]: # (<div class="accordion">)
-
-[//]: # (  <div class="accordion__section accordion__section--closed">)
-
-[//]: # (    <div class="accordion__section-title">Bakery</div>)
-
-[//]: # (  </div>)
-
-[//]: # (  <div class="accordion__section accordion__section--opened">)
-
-[//]: # (    <div class="accordion__section-title">Dairy</div>)
-
-[//]: # (    <ul class="accordion__items">)
-
-[//]: # (      <li class="accordion__item">Milk</li>)
-
-[//]: # (      <li class="accordion__item">Cheeses</li>)
-
-[//]: # (      <li class="accordion__item">Yoghurts</li>)
-
-[//]: # (    </ul>)
-
-[//]: # (  </div>)
-
-[//]: # (  <div class="accordion__section accordion__section--closed">)
-
-[//]: # (    <div class="accordion__section-title">Produce</div>)
-
-[//]: # (  </div>)
-
-[//]: # (</div>)
-
-[//]: # (```)
-
-[//]: # ()
-
-[//]: # (### Input)
-
-[//]: # ()
-
-[//]: # (```typescript)
-
-[//]: # (const accordionItems = [)
-
-[//]: # (  {)
-
-[//]: # (    title: "Bakery",)
-
-[//]: # (    items: ["Bread", "Cakes"],)
-
-[//]: # (  },)
-
-[//]: # (  {)
-
-[//]: # (    title: "Dairy",)
-
-[//]: # (    items: ["Milk", "Cheeses", "Yoghurts"],)
-
-[//]: # (  },)
-
-[//]: # (  {)
-
-[//]: # (    title: "Produce",)
-
-[//]: # (    items: ["Vegetables", "Salads", "Fruit"],)
-
-[//]: # (  },)
-
-[//]: # (];)
-
-[//]: # (```)
-
-[//]: # ()
-
-[//]: # (### Usage)
-
-[//]: # ()
-
-[//]: # (```typescript jsx)
-
-[//]: # (<App>)
-
-[//]: # (  <Accordion items={accordionItems} />)
-
-[//]: # (</App>)
-
-[//]: # (```)
-
-[//]: # ()
-
-[//]: # (## How to Work)
-
-[//]: # ()
-
-[//]: # (1. Create new files for your component and tests. Recommended locations would be)
-
-[//]: # (   `src/Accordion.tsx` and `src/Accordion.test.tsx`.)
-
-[//]: # (2. Develop your component.)
-
-[//]: # (3. Add `<Accordion items={accordionItems} />` to the `<App>` section of)
-
-[//]: # (   [App.tsx]&#40;./src/App.tsx&#41;.)
-
-[//]: # (4. Check in your browser and update/style to your heart's content.)
-
-[//]: # ()
-
-[//]: # (## Stretch Exercises)
-
-[//]: # ()
-
-[//]: # (If you want to add some additional functionality, here are some ideas to try)
-
-[//]: # (&#40;in no particular order&#41;.)
-
-[//]: # ()
-
-[//]: # (- Add a `boolean` property called `allowMultiple`; when set to true, multiple)
-
-[//]: # (  sections can be expanded at the same time. Also, consider added _Close All_)
-
-[//]: # (  and _Expand All_ buttons.)
-
-[//]: # (- Add an `onClick` property to the items so that they could be used as menu items.)
-
-[//]: # (- Consider whether it would make sense to de-compose into smaller sub-components. Some interesting reading might be looking into: [Break the UI into a component hierarchy]&#40;https://beta.reactjs.org/learn/thinking-in-react#step-1-break-the-ui-into-a-component-hierarchy=&#41;)
+1. From CLI terminal Change the dir to `/tdd-java-training/projects/day1/sprinboot-tdd-exercise` and execute below command to
+   run tests for `HelloWorldTestE2E.java`
+    ```
+    ./gradlew test --tests="HelloWorldTestE2E"
+    ```
+   Alternatively you can open
+   the [HelloWorldTestE2E.java](../projects/day1/springboot-tdd-exercise/src/test/java/com/example/springboottddexercise/HelloWorldTestE2E.java) file and execute test
+   from IDE.
+2. Create separate files for your main code and test code 
+ - Main Code - `projects/day1/springboot-tdd-exercise/src/main/java/com/example/springboottddexercise/HelloWorld.java`
+ - E2E Test  - `projects/day1/springboot-tdd-exercise/test/main/java/com/example/springboottddexercise/HelloWorldTestE2E.java`
+ - Unit Test - `projects/day1/springboot-tdd-exercise/test/main/java/com/example/springboottddexercise/HelloWorldTest.java`
+3. Follow the red-green-refactor cycle when developing your code.
