@@ -6,13 +6,15 @@ TDD gives you continuous feedback on the quality of your design whilst building 
 
 ## Approach
 
-When doing this exercise, try to implement the function using tests to convince yourself that the code you have written is correct.
+When doing this exercise, try to implement the function using tests to convince yourself that the code you have written
+is correct.
 
 Implement 1 test at a time, and then write the code needed to pass the test, as per the red-green-refactor cycle.
 
 ## Functional requirements
 
 You need to build Set functionality which meets the follwing requirements:
+
 + each element can only appear in the set once
 + 'union' operation returns elements that are in both sets
 + 'intersect' operation returns elements that are common to both sets

@@ -5,30 +5,37 @@ WIP: For relevant replacement of the React exercise.
 [//]: # (This exercise involves building a React component using tests to drive the development.)
 
 [//]: # ()
+
 [//]: # (## Approach)
 
 [//]: # ()
+
 [//]: # (When doing this exercise, try to implement the component using tests to convince)
 
 [//]: # (yourself that the code you have written is correct.)
 
 [//]: # ()
+
 [//]: # (**BONUS POINTS TO ANYONE WHO MANAGES TO WRITE THE WHOLE COMPONENT USING ONLY)
 
 [//]: # (TESTS AND HAS IT WORKING THE FIRST TIME IT IS OPENED IN THE BROWSER!**)
 
 [//]: # ()
+
 [//]: # (## Component Requirements)
 
 [//]: # ()
+
 [//]: # (The component you have to develop is an Accordion menu. An accordion is a)
 
 [//]: # (vertically stacked, sectioned list &#40;[see example]&#40;https://react-accordion-demo.netlify.app/&#41;&#41;. Each section can be expanded by clicking the heading. The component must be developed **from scratch**. )
 
 [//]: # ()
+
 [//]: # (### Functional requirements)
 
 [//]: # ()
+
 [//]: # (1. On initialization, no sections are expanded)
 
 [//]: # (2. A section expands when you click the title)
@@ -38,12 +45,15 @@ WIP: For relevant replacement of the React exercise.
 [//]: # (4. You can close all sections by clicking the currently expanded title)
 
 [//]: # ()
+
 [//]: # (### HTML)
 
 [//]: # ()
+
 [//]: # (The generated HTML should look something like this:)
 
 [//]: # ()
+
 [//]: # (```html)
 
 [//]: # (<div class="accordion">)
@@ -81,9 +91,11 @@ WIP: For relevant replacement of the React exercise.
 [//]: # (```)
 
 [//]: # ()
+
 [//]: # (### Input)
 
 [//]: # ()
+
 [//]: # (```typescript)
 
 [//]: # (const accordionItems = [)
@@ -117,9 +129,11 @@ WIP: For relevant replacement of the React exercise.
 [//]: # (```)
 
 [//]: # ()
+
 [//]: # (### Usage)
 
 [//]: # ()
+
 [//]: # (```typescript jsx)
 
 [//]: # (<App>)
@@ -131,9 +145,11 @@ WIP: For relevant replacement of the React exercise.
 [//]: # (```)
 
 [//]: # ()
+
 [//]: # (## How to Work)
 
 [//]: # ()
+
 [//]: # (1. Create new files for your component and tests. Recommended locations would be)
 
 [//]: # (   `src/Accordion.tsx` and `src/Accordion.test.tsx`.)
@@ -147,14 +163,17 @@ WIP: For relevant replacement of the React exercise.
 [//]: # (4. Check in your browser and update/style to your heart's content.)
 
 [//]: # ()
+
 [//]: # (## Stretch Exercises)
 
 [//]: # ()
+
 [//]: # (If you want to add some additional functionality, here are some ideas to try)
 
 [//]: # (&#40;in no particular order&#41;.)
 
 [//]: # ()
+
 [//]: # (- Add a `boolean` property called `allowMultiple`; when set to true, multiple)
 
 [//]: # (  sections can be expanded at the same time. Also, consider added _Close All_)
