@@ -26,10 +26,10 @@ Given the user wants to be greeted
    ```json
    { "name": "Abhishek", "time" : 11 }
   ```
-- And Morning time is greater than, equal to "4" and less than, equal to "12" then the user should be greeted as "Good Morning Abhishek"
-- And Afternoon time is greater than "12" and less than, equal to "17" then the user should be greeted as "Good Afternoon Abhishek"
-- And Evening time is greater than "17" and less than, equal to "20" then the user should be greeted as "Good Evening Abhishek"
-- And Night time is greater than "20" and is less than 4" then the user should be greeted as "Good Night Abhishek"
+- And Morning time is greater than, equal to "4" and less than "12" then the user should be greeted as "Good Morning Abhishek"
+- And Afternoon time is greater than, equal to "12" and less than to "17" then the user should be greeted as "Good Afternoon Abhishek"
+- And Evening time is greater than, equal to "17" and less than "20" then the user should be greeted as "Good Evening Abhishek"
+- And Night time is greater than, equal to "20" and is less than 4" then the user should be greeted as "Good Night Abhishek"
 
 ## How to Work
 
