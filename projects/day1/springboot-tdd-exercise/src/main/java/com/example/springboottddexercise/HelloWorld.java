@@ -9,7 +9,7 @@ import org.springframework.web.client.HttpClientErrorException;
 @RestController
 public class HelloWorld {
 
-    @RequestMapping(value = "/{name}")
+    @RequestMapping(value = "/helloworld/{name}")
     public String getMessage(@PathVariable String name) {
         if (!name.matches("^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$")) {
             throw new HttpClientErrorException(HttpStatus.BAD_REQUEST,

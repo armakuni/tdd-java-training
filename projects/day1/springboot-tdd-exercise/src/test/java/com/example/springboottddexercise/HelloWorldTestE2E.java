@@ -17,8 +17,8 @@ public class HelloWorldTestE2E {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void getMessage_shouldReturnMessage() throws Exception {
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/Abhishek",
+    public void getMessage_shouldReturnMessage() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/helloworld/Abhishek",
                 String.class)).isEqualTo("Hello World Abhishek");
     }
 }

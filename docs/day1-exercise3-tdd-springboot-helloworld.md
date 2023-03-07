@@ -18,13 +18,13 @@ You need to build a `GET` API meeting the following requirements:
 
 ### First requirement
 - Given a Username is passed `Abhishek`
-- When makes a call to a `GET` API at `http://localhost:8080/Abhishek`
+- When makes a call to a `GET` API at `http://localhost:8080/helloworld/Abhishek`
 - Then the API should return a response `Hello World Abhishek`
 
 ### Second requirement
 
 - Given a non-alphabetic username is passed `111@aslf`
-- When User makes a call to a `GET` API at `http://localhost:8080/111@aslf`
+- When User makes a call to a `GET` API at `http://localhost:8080/helloworld/111@aslf`
 - Then the API should return a error `400 BAD REQUEST` 
 
 ## How to Work
